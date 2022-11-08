@@ -1,0 +1,73 @@
+package com.example.jntuasubjects;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.content.Intent;
+import android.view.View;
+
+public class SecondYear extends AppCompatActivity {
+    public  Button button;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_second_year);
+        button = (Button) findViewById(R.id.btn);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,EEE.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn1);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,CSE.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn2);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,ECE.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn3);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,CE.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn4);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,IT.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn5);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,FT.class);
+                startActivity(intent);
+            }
+        });
+        button = (Button) findViewById(R.id.btn6);
+        button.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                Intent intent = new Intent(SecondYear.this,ME.class);
+                startActivity(intent);
+            }
+        });
+
+    }
+}
